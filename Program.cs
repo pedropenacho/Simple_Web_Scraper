@@ -63,11 +63,19 @@ namespace WebScraper
                     {
                         Console.WriteLine("There is no matches for the specified scrape user inputs.");
                     }
+
+                    Console.WriteLine("\n\n\n Press Any Key To Exit");
+                    Console.ReadLine();
+                    System.Environment.Exit(0);
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+
+                Console.WriteLine("\n\n\n Press Any Key To Exit");
+                Console.ReadLine();
+                System.Environment.Exit(0);
             }    
         }
     }
