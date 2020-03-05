@@ -1,0 +1,7 @@
+### Csharp ###
+##Ignore Visual Studio build results
+
+#Build results
+[Bb]in/
+[Dd]ebug/
+[Oo]bj/
