@@ -72,25 +72,3 @@ namespace WebScraper
         }
     }
 }
-
-#region "Error Handling ("Try...Catch") To Get More Information About The Web Exception"
-//try
-//{
-//    string content = client.DownloadString($"https://{craigslistCity.Replace(" ", string.Empty)}.craigslist.org/{method}/sss?query={craigslistCategory}&sort=rel");
-//    //string content = client.DownloadString("https://london.craigslist.org/search/sss?query=ford&sort=rel");
-//    Console.WriteLine(content);
-//}
-//catch (WebException exception)
-//{
-//    string responseText = string.Empty;
-//    var responseStream = exception.Response?.GetResponseStream();
-//    if (responseStream != null)
-//    {
-//    using (var reader = new StreamReader(responseStream))
-//    {
-//        responseText = reader.ReadToEnd();
-//    }
-//}
-//Console.WriteLine(responseText);
-//}
-#endregion
