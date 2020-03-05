@@ -10,11 +10,6 @@ namespace WebScrapper.Builders
 {
     class ScrapeCriteriaBuilder
     {
-        //public string Data { get; set; }
-        //public string Regex { get; set; }
-        //public RegexOptions RegexOption { get; set; }
-        //public List<ScrapeCriteriaPart> Parts { get; set; }
-
         private string _data;
         private string _regex;
         private RegexOptions _regexOption;

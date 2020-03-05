@@ -20,65 +20,6 @@ namespace WebScraper
         {
             try
             {
-                #region"Logic for User Input Handling"
-                /*bool rightDataTypeCity = false;
-                bool rightDataTypeCategory = false;
-                string craigslistCity;
-                string craigslistCategory;
-
-                do
-                {
-                    Console.WriteLine("Please enter city from which you would like to scrape information from: ");
-                    craigslistCity = Console.ReadLine().ToLower() ?? string.Empty;
-
-
-                    if (!craigslistCity.Equals(typeof(System.String)))  //C# type comparison, if craigslistCity not a string
-                    {
-                        Console.WriteLine("City input has to be a string. Try again? Y/N");
-                        string continueDecision = Console.ReadLine() ?? string.Empty;
-                        if (continueDecision.Equals("Y", StringComparison.OrdinalIgnoreCase))
-                        {
-                            rightDataTypeCity = false;
-                            Console.Clear();
-                        }
-                        else if (continueDecision.Equals("N", StringComparison.OrdinalIgnoreCase))
-                        {
-                            Environment.Exit(0);
-                        }
-                    }
-                    else if (craigslistCity.Equals(typeof(System.String)))
-                    {
-                        rightDataTypeCity = true;
-                        //break;
-                    }
-
-                } while (!rightDataTypeCity);
-
-
-                do
-                {
-                    Console.WriteLine("Please enter category from which you would like to scrape information from: ");
-                    craigslistCategory = Console.ReadLine().ToLower() ?? string.Empty;
-
-                    if (!craigslistCategory.Equals(typeof(System.String)))
-                    {
-                        Console.WriteLine("Category input has to be a string. Try again? Y/N");
-                        string continueDecision = Console.ReadLine() ?? string.Empty;
-                        if (continueDecision.Equals("Y", StringComparison.OrdinalIgnoreCase))
-                        {
-                            rightDataTypeCategory = false;
-                            Console.Clear();
-                        }
-                        else if (continueDecision.Equals("N", StringComparison.OrdinalIgnoreCase))
-                        {
-                            Environment.Exit(0);
-                        }
-                    }
-                    else { rightDataTypeCategory = true; }
-
-                } while (!rightDataTypeCategory);*/
-                #endregion
-
                 Console.WriteLine("Please enter city from which you would like to scrape information from: ");
                 string craigslistCity = Console.ReadLine().ToLower() ?? string.Empty;
 
@@ -116,16 +57,6 @@ namespace WebScraper
                         foreach (var scrapedElement in scrapedElements)
                         {
                             Console.WriteLine(scrapedElement);
-                            //if (scrapeCriteria.Regex == @" > (.*?) </ a > ")
-                            //{
-                            //    Console.WriteLine(scrapedElement);
-                            //}
-                            //else if(scrapeCriteria.Regex == @"href=\""(.*?)\""")
-                            //{
-                            //    Console.WriteLine(scrapedElement);
-                            //    Console.WriteLine();
-                            //}
-
                         }
                     }
                     else
